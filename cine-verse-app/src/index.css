@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  .animate-spin-slow {
+    animation: spin 3s linear infinite;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  /* For custom scrollbars if desired */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: theme("colors.gray.700") theme("colors.gray.800");
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: theme("colors.gray.800");
+    border-radius: 10px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: theme("colors.gray.700");
+    border-radius: 10px;
+    border: 2px solid theme("colors.gray.800");
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: theme("colors.gray.600");
+  }
+}
+body {
+  font-family: "Inter", sans-serif; /* Ensure Inter font is loaded */
+}
