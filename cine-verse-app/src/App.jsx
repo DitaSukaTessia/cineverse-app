@@ -29,13 +29,13 @@ import {
   Sun,
 } from "lucide-react";
 
-// Placeholder for TMDB API Key - Replace with your actual key
-const TMDB_API_KEY = "YOUR_TMDB_API_KEY"; // IMPORTANT: Replace this with your actual TMDB API key
+// placeholder for TMDB API key - replace with your actual key
+const TMDB_API_KEY = "830b11abf7053cf39d25c9cd2402654b"; // IMPORTANT: Replace this with your actual TMDB API key
 const TMDB_BASE_URL = "https://api.themoviedb.org/3";
 const TMDB_IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 const TMDB_BACKDROP_BASE_URL = "https://image.tmdb.org/t/p/original";
 
-// Mock Data (Replace with API calls)
+// mock data (replace with API calls)
 const mockMovies = [
   {
     id: 1,
